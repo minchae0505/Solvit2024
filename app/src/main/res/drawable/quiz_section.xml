@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- 도형의 속성을 : line, oval, rectangle, ring 로 표현 -->
+    <solid
+        android:color="@color/quiz"/>
+    <size
+        android:width="300dp"
+        android:height="200dp"/> <!-- 도형의 크기 -->
+    <corners
+        android:radius="5dp"/>
+
+</shape>

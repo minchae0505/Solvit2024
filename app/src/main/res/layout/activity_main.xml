@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/solvit"/>
+
+
+    <android.widget.Button
+        android:id="@+id/btn_math"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/math"
+        android:textSize="24sp"
+        android:text="수학"
+        android:textColor="@color/white"
+        android:stateListAnimator="@null"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_history"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/btn_math"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="100dp"
+        android:background="@color/history"
+        android:stateListAnimator="@null"
+        android:text="역사"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <android.widget.Button
+        android:id="@+id/btn_science"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/btn_math"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/science"
+        android:textSize="24sp"
+        android:text="과학"
+        android:textColor="@color/white"
+        android:stateListAnimator="@null"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_english"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/btn_history"
+        android:layout_toEndOf="@+id/btn_science"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/english"
+        android:stateListAnimator="@null"
+        android:text="영어"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_coment"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_science"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+
+        android:text="여러 상식문제들을 풀어보고\n 나의 상식 범위를 넓혀봐요!"
+        />
+
+
+
+</RelativeLayout>
