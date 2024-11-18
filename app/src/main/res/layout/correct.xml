@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/solvit"/>
+
+    <ImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/circle"/>
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/check"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_circle"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="정답입니다!" />
+
+    <android.widget.Button
+        android:id="@+id/btn_next1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:text="다음 문제"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@drawable/next"
+        android:stateListAnimator="@null"/>
+
+</RelativeLayout>

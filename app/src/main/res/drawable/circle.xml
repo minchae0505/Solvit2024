@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"> <!-- 도형의 속성을 : line, oval, rectangle, ring 로 표현 -->
+    <solid
+        android:color="@color/white"/>
+    <stroke android:width="5dp" android:color="@color/black"/>
+    <size
+        android:width="350dp"
+        android:height="350dp"/>
+
+</shape>
