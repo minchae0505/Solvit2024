@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/correct"
+    android:id="@+id/finish"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -26,14 +26,13 @@
         android:src="@drawable/circle"/>
 
     <ImageView
-        android:id="@+id/iv_check"
+        android:id="@+id/iv_wrong"
         android:layout_width="210dp"
         android:layout_height="210dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/iv_logo"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="170dp"
-        android:src="@drawable/check_mark"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/star_filled"/>
 
     <TextView
         android:id="@+id/tv_text"
@@ -45,7 +44,18 @@
         android:textAlignment="center"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:text="정답입니다!" />
+        android:text="축하해요!" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="상식 문제를 모두 다 해결했어요!"/>
+
 
     <android.widget.Button
         android:id="@+id/btn_next1"
