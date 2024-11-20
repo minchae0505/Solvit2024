@@ -26,8 +26,26 @@
         android:background="@color/math"
         android:textSize="24sp"
         android:text="수학"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:stateListAnimator="@null"/>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/add_btn"/>
+
+    <ImageView
+        android:id="@+id/iv_division"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/divison_btn"/>
 
     <android.widget.Button
         android:id="@+id/btn_history"
@@ -40,7 +58,7 @@
         android:background="@color/history"
         android:stateListAnimator="@null"
         android:text="역사"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp" />
 
     <android.widget.Button
@@ -53,7 +71,7 @@
         android:background="@color/science"
         android:textSize="24sp"
         android:text="과학"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:stateListAnimator="@null"/>
 
     <android.widget.Button
@@ -67,7 +85,7 @@
         android:background="@color/english"
         android:stateListAnimator="@null"
         android:text="영어"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp" />
 
     <TextView
@@ -78,6 +96,7 @@
         android:layout_below="@+id/btn_science"
         android:layout_marginTop="50dp"
         android:textSize="16sp"
+        android:textStyle="bold"
         android:text="여러 상식문제들을 풀어보고\n 나의 상식 범위를 넓혀봐요!"
         />
 
